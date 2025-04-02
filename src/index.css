@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: FrauncesSemiBold;
+  src: url("src/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+@font-face {
+  font-family: Manrope;
+  src: url("src/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+@theme {
+  --color-green000: #44ffa1;
+  --color-purple900: #24053e;
+  --color-purple500: #584d62;
+  --color-purple100: #fcf8ff;
+}
+
+@layer components {
+  .textPreset1 {
+    font-family: FrauncesSemiBold;
+    font-size: 5em;
+    line-height: 100%;
+  }
+  .textPreset2 {
+    font-family: FrauncesSemiBold;
+    font-size: 3.5em;
+    line-height: 120%;
+  }
+  .textPreset3 {
+    font-family: FrauncesSemiBold;
+    font-size: 2em;
+    line-height: 120%;
+  }
+  .textPreset4 {
+    font-family: Manrope;
+    font-size: 1.125em;
+    line-height: 180%;
+  }
+  .textPreset5 {
+    font-family: Manrope;
+    font-size: 1.125em;
+    line-height: 150%;
+    font-weight: bold;
+  }
+}
+
+.heroContainer {
+  background-color: var(--color-purple900);
+}
